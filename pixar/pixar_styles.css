@@ -6,10 +6,26 @@ img, p, h1, h2, .divider {
     text-align: justify;
 }
 
-h1, h2 {
+figcaption {
+    text-align: justify;
+    font-size: 12;
+    color: grey;
+    width: 100%;
+	max-width: 740px;
+    margin-left: auto;
+	margin-right: auto;
+}
+
+h1 {
     font-family: "Roboto";
     font-size: 50px;
     text-align: center;
+}
+
+h2 {
+    font-family: "Roboto";
+    font-size: 35px;
+    text-align: left;
 }
 
 #byline {

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Pixar</title>
+        <link rel="stylesheet" href="pixar_styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    </head>        
+    <body>
+        <h1>Pixar Over the Ages</h1>
+        <p id ="byline">By Tanvi Palsamudram</p>
+        <div class ="divider"></div>
+        <p>On June 14th, 2024, <i>Inside Out 2</i> premiered to audiences across the country. In this movie, rising high school freshman Riley explores a transition into a new environment, leaving her comfort zone of her middle school friends behind and experiencing uncomfortable new emotions, notably anxiety. Earning over 1.6 billion US dollars at the global box office, this movie very quickly became the highest-grossing animated movie of all time (until it was later dethroned by <i>Ne Zha 2</i>). Lauded for <a href="https://www.latimes.com/entertainment-arts/business/story/2024-07-10/so-much-for-the-pixar-slump-inside-out-2-just-achieved-a-huge-box-office-milestone">“breaking the Pixar slump”</a>, it has become increasingly clear that <i>Inside Out 2</i> was a unique phenomenon.</p>
+        <figure>
+            <img src="final/headline_recording.gif" alt="GIF of Inside Out 2 headlines">
+            <figcaption>A compilation of recent headlines after the release of <i>Inside Out 2</i></figcaption>
+        </figure>
+        <p>However, not all reviews of this movie were complimentary. Descriptors in the news such as <a href="https://jacobin.com/2024/06/inside-out-2-pixar-film-review/">“bland”</a>, <a href="https://jacobin.com/2024/06/inside-out-2-pixar-film-review/">“unoriginal”</a>, and <a href="https://www.vulture.com/article/inside-out-2-is-another-product-of-the-pixar-slump.html">"stakeless filler"</a> made it clear that while <i>Inside Out 2</i> was an unequivocal box office hit, it didn’t land in everybody’s hearts. But what exactly is this “Pixar Slump”? What was going on with Pixar before <i>Inside Out 2</i> was released?</p>
+        <p>As an avid fan of animation and a guilty fan of online discourse about animation, I took it upon myself to investigate Pixar’s releases and reception over time. I came across Eric Leung’s open-source <a href="https://erictleung.com/pixarfilms/">pixarfilms</a> dataset that contains information about all things Pixar, including release dates, themes, box office revenue, and the critical and audience reception for every Pixar movie until the summer of 2024.</p>
+        <img id = "release" src = "final/pixar_segment_release_medium.png">
+        <p>When looking at domestic and international box office revenue for each movie, it is clear that Pixar went through a box office lull for the past half-decade after years of fairly steady growth. Due to the Covid-19 pandemic preventing people from frequenting movie theaters and the introduction of Disney+ Streaming incentivizing viewers to wait and view films from the comfort of their homes, movies that came out in the early half of the 2020s (<i>Luca</i>, <i>Soul</i>, <i>Elemental</i>, <i>Turning Red</i>) suffered from low domestic and global box office revenues. However, <i>Inside Out 2</i> was the first film to break the one billion dollar ceiling, effectively ending this slump. </p>
+        <p>But why was <i>Inside Out 2 </i>such a commercial success? Was it because it is a poignant depiction of the emotional rollercoaster of adolescence as we grapple with our widening worldviews and changing bodies? Or was it because it was a sequel to a previously successful movie? This question motivated me to investigate how box office rates of sequels differ from their original counterparts (taking inflation into account, of course). </p>
+        <img id = "sequel" src = "final/SequelInflation_medium.png">  
+        <p>It is interesting to see that even after taking inflation into account, most Pixar sequels outperform their original, and those that don’t never get a next installment. Notably, <i>Inside Out 2</i>, <i>Incredibles 2</i>, and <i>Toy Story 3</i> earned substantially more than their predecessors. The profitability of these sequels and the evolution of box office revenue made me wonder how the audience and critical response to these films has changed over time. </p> 
+        <img id = "audience" src = "final/AudienceCritic_medium.png">
+        <p>It appears that it really is all downhill from here. Even though Pixar’s box office revenue has generally seen an increase over the past few years, its reception has seen a steady decline over time with the exception of significant outliers (e.g., <i>Cars 2</i>). Be it from the critics (Metacritic, Rotten Tomatoes) or regular audiences (IMDB), everybody seems to agree that the quality of Pixar movies decreased over the ages.</p>
+        <p>Although still largely beloved, Pixar faces unique challenges of the rise of streaming, the aftershocks of a pandemic, and a general decrease in goodwill. Despite this slightly discouraging ending, I remain optimistic that Pixar will continue to be an animation staple for movie enthusiasts everywhere for years to come. Does <i>Inside Out 2</i> represent a point of hope, or would it take several more years for Pixar to find a balance between its original reception and current box office revenue? I look forward to finding out.</p>
+        <div class ="divider"></div>
+        <h2>Notes</h2>
+        <p>My source of data pixarfilms dataset by Eric Leung. Using R’s tidyverse package, I combined the six csv files containing information about the Pixar movies to create the dataset used to construct visualizations. Visualizations were made using R’s ggplot package, and were refined with Adobe Illustrator. Inflation was accounted for using the US Bureau of Labor Statistics <a href="https://erictleung.com/pixarfilms/">CPI Inflation Calculator</a>.</p>
+    </body>
+</html>
